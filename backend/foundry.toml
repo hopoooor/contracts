@@ -1,0 +1,19 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = [
+    'arb-bridge-eth/=lib/nitro/contracts/src',
+    'uniswap/=lib/v3-periphery',
+    '@uniswap/v3-core/=lib/v3-core',
+    '@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts',
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts',
+    '@arbitrum/nitro-contracts/=lib/nitro/contracts',
+    '@rari-capital/solmate/src/=lib/solmate/src/'
+]
+[rpc_endpoints]
+goerli = "${GOERLI_RPC_URL}"
+
+[etherscan]
+goerli = { key = "${ETHERSCAN_KEY}" }
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
